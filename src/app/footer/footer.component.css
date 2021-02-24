@@ -1,0 +1,27 @@
+
+  .body {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    padding: 20px 0px;
+    margin-right: 0;
+    width: 100%;
+    background-color: #F9F9F9;
+  }
+  .home {
+      padding: 0 22px;
+  }
+.svg {
+    text-align: center;
+}
+.svg_text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #000;
+}
+button {
+    outline: none;
+    border: 0px;
+}

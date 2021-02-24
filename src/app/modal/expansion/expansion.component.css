@@ -1,0 +1,22 @@
+.img {
+    /* margin: 5px 0px; */
+    width: 100%;
+}
+.close {
+    /* padding: 10px; */
+    font-size: 30px;
+    border: 1px solid grey;
+}
+.pay {
+    color: black;
+    border: 1px solid grey;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+button {
+    outline: none;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+}

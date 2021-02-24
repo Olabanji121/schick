@@ -1,0 +1,25 @@
+<div class="body animate__animated animate__fadeIn">
+    <div class="header">
+        <img src="assets/logo.png" width="170" height="40" alt="">
+    </div>
+    <div class="text1">Sign In</div>
+    <form (submit)="handleSubmit()">
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" [(ngModel)]="user.email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" [(ngModel)]="user.password" placeholder="Password">
+        </div>
+        
+        <button type="submit" mat-button *ngIf="!loading">Sign In</button>
+        <button mat-button *ngIf="loading">Please wait...</button>
+    </form>
+
+    <div class="text-center mt-1 text-danger" *ngIf="loginErr">Invalid Credential(s)</div>
+
+    <div class="lastText text-center mt-5">
+        Don't have an account?
+        <a [routerLink]="['/sign-up']" routerLinkActive="router-link-active" >Sign up.</a>
+    </div>
+
+</div>

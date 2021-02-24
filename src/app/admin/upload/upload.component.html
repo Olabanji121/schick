@@ -1,0 +1,38 @@
+<div class="row">
+    
+    <div class="cover col-8 col-md-3" (click)="uploadCover()">
+        Upload Magazine Cover
+        <img [src]="magazine.sanitizedCover" alt="">
+    </div>
+
+    <div class="col-7 offset-1">
+        <div class="text-center font-weight-bold" [style.color]="feedback.success? 'green' : 'red' ">{{feedback.message}}</div>
+        <div class="input-group mt-5">
+            <label for="price" class="label-control m-2 col-12 col-md-2">Price(₦):</label>
+            <input id="price" type="text" class="form-control col-12 col-md-10" name="price" [(ngModel)]="magazine.price" placeholder="Enter Price (₦)">
+        </div>
+    
+        <div class="input-group mt-5">
+            <label for="issue" class="label-control m-2 col-2">Issue:</label>
+            <input id="issue" type="month" class="form-control col-10" name="issue" [(ngModel)]="magazine.issue" >
+        </div>
+
+        <div class="input-group mt-5">
+            <label for="file" class="label-control m-2 col-2">Upload Magazine:</label>
+            <input id="file" (change)="onSelectMagazine($event)" type="file" class="form-control col-10" name="file" placeholder="Upload Magazine" [(ngModel)]="magazine.file" >
+        </div>
+
+        <div class="input-group mt-5">
+            <button class="bg-dark text-light form-control col-12 col-md-4 ml-md-auto" mat-button *ngIf="!loader" (click)="handleSubmit()">
+                Submit Magazine
+            </button>
+            <button class="bg-dark text-light form-control col-12 col-md-4 ml-md-auto" *ngIf="loader" mat-button disabled>
+                Please wait...
+            </button>
+        </div>
+    </div>
+    
+
+</div>
+
+<input type="file" name="cover" id="cover" [(ngModel)]="magazine.cover" (change)="onSelectCover($event)" hidden>

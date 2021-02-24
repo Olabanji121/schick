@@ -1,0 +1,29 @@
+<div>
+    <div class="head text-center animate__animated animate__fadeIn" style="padding-top: 15vh;">
+        <img src="assets/logo2.png" height="70" alt="">
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div class="rounded">
+            <img src="http://assets.stickpng.com/images/585e4bcdcb11b227491c3396.png" width="100" alt="">
+        </div>
+    </div>
+
+    <div>
+        <div class="box d-flex">
+            <img src="https://cdn1.iconfinder.com/data/icons/essential-21/128/User-512.png" width="40" alt="">
+            <span class="offset-1">{{data?.name}}</span>
+        </div>
+        <div class="box d-flex">
+            <img src="https://img.icons8.com/ios/452/phone.png" width="40" alt="">
+            <span class="offset-1">{{data?.mobile}}</span>
+        </div>
+        <div class="box d-flex">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbHK9bnu1bYzS00qiE9wQC6NmxMaPw6rbUpw&usqp=CAU" width="40" alt="">
+            <span class="offset-1">{{data?.email}}</span>
+        </div>
+    </div>
+
+    <div (click)="logout()"  style="margin-top: 40px; margin-bottom: 20px; text-align: center; font-weight: 500; text-decoration: underline; font-size: 20px;">Sign out</div>
+</div>
+
+<app-footer></app-footer>

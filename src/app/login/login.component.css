@@ -1,0 +1,40 @@
+.body {
+    padding: 70px 20px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+a {
+    line-height: 50px;
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+}
+.text1 {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 24px;
+}
+form {
+    margin-top: 80px;
+}
+input {
+    border: 0px;
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+.form-group {
+    margin-top: 60px;
+}
+button {
+    margin-top: 100px;
+    background-color: #373435;
+    color: white;
+    width: 100%;
+    padding: 7px;
+    border-radius: 40px;
+}

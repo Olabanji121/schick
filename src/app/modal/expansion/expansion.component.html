@@ -1,0 +1,24 @@
+<div class="modal fade" id="expansion" tabindex="-1" role="dialog" aria-labelledby="expansionTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modalHeader text-right" (click)="hide()">
+            <img class="close" src="assets/svg/cancel.svg" alt="" width="25" height="25">
+        </div>
+       
+        <div class="modal-body">
+            <div class="flex">
+                <button mat-button>
+                    <img class="img" [src]="data?.cover">
+                    <div>
+                        <span>{{data?.issue}}</span> | <span class="text-danger">{{data?.file_size}} Mb</span>
+                    </div>
+                    
+                    <div>
+                        <button class="pay" mat-button (click)="handleSelection(data?.id, data?.price)">₦ {{data?.price}}</button>
+                    </div>
+                </button>
+            </div>  
+        </div>
+        
+    </div>
+  </div>

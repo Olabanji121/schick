@@ -1,0 +1,15 @@
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px;
+}
+.nav-link {
+    padding: 10px;
+    border-radius: 6px;
+}
+.nav-link:hover {
+    background-color: rgb(165, 162, 162);
+}
+.navbar {
+    position: static; 
+}

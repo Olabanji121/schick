@@ -1,0 +1,11 @@
+<div class="modal fade" id="notify" tabindex="-1" role="dialog" aria-labelledby="notifyTitle" aria-hidden="true" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content text-center">
+        <div class="modal-body text-center text-success" *ngIf="msg.success">
+            {{msg.msg}}
+        </div>
+        <div class="modal-body text-center text-danger" *ngIf="!msg.success">
+            {{msg.msg}}
+        </div>
+    </div>
+  </div>

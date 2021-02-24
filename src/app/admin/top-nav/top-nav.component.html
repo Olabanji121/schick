@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+    <a class="navbar-brand" href="#"><img src="assets/logo.png" height="40" alt=""></a>
+    <button class="navbar-toggler" *ngIf="currentRout=='/admin'" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse"  *ngIf="currentRout=='/admin'" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto offset-md-2 mt-1">
+        <li class="nav-item active">
+          <a class="nav-link" href="javascript:void(0)" (click)="routset('upload')">Upload Magazine <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ml-2 mr-2">
+            <a href="javascript:void(0)" class="nav-link">View all Magazine</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link">View all Downloads</a>
+        </li>
+      </ul>
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
+    </div>
+  </nav>
