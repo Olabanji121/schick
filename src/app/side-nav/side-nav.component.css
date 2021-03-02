@@ -1,0 +1,67 @@
+.d-flex {
+    font-size:30px;cursor:pointer; background-color: #FEFEFE; padding: 8px 12px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(65, 62, 62, .85);
+    /* background-image: url("/assets/spread.png"); */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a, .nav-item {
+    padding: 38px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+   
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid grey;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .side-nav-brand {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .sub-nav-item {
+      font-size: 14px;  padding: 8px 8px 0px 20px;
+      margin-left: 28px; color: white;
+  }
+
+  .social {
+      display: flex; justify-content: center; width: 100%;
+      position: absolute; bottom: 0px; background-color: rgba(110, 106, 106, 0.705);
+     
+  }
+  .social a{
+    padding: 8px 19px; 
+  } 
+  .social a:last-child {
+    padding-right: 0px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

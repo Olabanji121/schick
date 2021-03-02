@@ -1,0 +1,28 @@
+<app-expansion [data]="expansionData"></app-expansion>
+<app-notify [msg]='msg'></app-notify>
+
+<app-side-nav></app-side-nav>
+<div class="body">
+    <div class="container animate__animated animate__zoomIn mb-5" *ngIf="!loader">
+   
+        
+        <div class="row p-3 pt-0">
+            <button mat-button class="col-6 col-md-3" *ngFor="let item of data; let i = index">
+                <img (click)="handleExpansion(item)" [src]="item.cover" alt="">
+                <div class="d-flex mb-2">
+                    <span class="mr-2">Issue:</span>
+                    <span class="text-info">{{item?.issue}}</span>              
+                </div>
+                <!-- <div>
+                    <button class="pay" mat-button (click)="handleSelection(item.id, item.price)"> ₦ {{item?.price}}</button>
+                </div> -->
+            </button>
+        </div>
+        
+    </div>
+    
+    <div class="spinner text-center" *ngIf="loader">
+        <img src="assets/loader.gif" alt="">
+    </div>
+    
+</div>

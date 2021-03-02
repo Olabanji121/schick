@@ -1,0 +1,39 @@
+img {
+    margin: 10px 0px 0px 0px;
+    height: 230px;
+    width: 100%;
+}
+img:first-child {
+    margin-top: 0 !important;
+}
+/* .triangle {
+    position: absolute;
+    width: 100%;
+    border-top: 100px solid #f2f2f2;
+    border-left: 100px solid transparent;
+
+} */
+.body {
+    height: 96vh; position: relative;
+    overflow: auto; 
+}
+
+
+.pay {
+    color: black;
+    border: 1px solid grey;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+button {
+    outline: none;
+}
+/* .container {
+    height: 90%;
+    overflow: auto;
+} */
+.flex {
+    display: flex;
+    justify-content: center;
+}
+

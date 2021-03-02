@@ -1,34 +1,33 @@
-img {
-    margin: 20px 0px 10px 0px;
-    height: 230px;
+.one {
     width: 100%;
-}
-/* .triangle {
-    position: absolute;
-    width: 100%;
-    border-top: 100px solid #f2f2f2;
-    border-left: 100px solid transparent;
-
-} */
-.body {
-    height: 96vh; position: relative;
-    overflow: auto; background-color: #f2f2f2;
-}
-
-.pay {
-    color: black;
-    border: 1px solid grey;
-    width: 100%;
-    background-color: #f2f2f2;
-}
-button {
-    outline: none;
-}
-.container {
-    height: 90%;
-    overflow: auto;
-}
-.flex {
+    text-align: center;
+    position: relative;
+    top: -10%;
+    z-index: -1;
     display: flex;
+    align-items: center;
     justify-content: center;
+    padding-top: 60px;
+    height: 280px;
+    background-color: #000;
+    background-image: url('/assets/spread1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    display: flex;
+    max-height: 50vh;
+  }
+  .column img {
+      width: 50%;
+  }
+  

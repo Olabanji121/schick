@@ -19,15 +19,15 @@ a {
     font-size: 24px;
 }
 form {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 input {
     border: 0px;
-    border-bottom: 1px solid grey;
+    border-bottom: .5px solid grey;
     outline: none;
 }
 .form-group {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 button {
     margin-top: 100px;

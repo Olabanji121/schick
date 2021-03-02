@@ -1,0 +1,19 @@
+
+<div class="spinner text-center" *ngIf="perc<100">
+    <img src="assets/loader.gif" alt=""><br />
+    <div class="percentage"> {{perc.toFixed(0)+' %'}}</div>
+</div>
+
+<pdf-viewer 
+
+    [src]="pdf"
+    [render-text]="true"
+    [show-all]="true"
+    [original-size]="false"
+    [fit-to-page]="true"
+    [stick-to-page]="true"
+    (on-progress)="onProgress($event)"
+    style="display: block; position: relative; height: 100vh;"
+>
+
+</pdf-viewer>

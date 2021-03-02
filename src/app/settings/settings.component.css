@@ -1,0 +1,30 @@
+
+button {
+    margin-top: 60px;
+    background-color: #373435;
+    color: white;
+    width: 100%;
+    padding: 7px;
+    border-radius: 40px;
+}
+.head {
+    height: 30vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.532);
+}
+
+.box {
+    padding: 6px;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+    font-weight: 500;
+    font-size: 22px;
+    color: rgb(75, 73, 73);
+    line-height: 30px;
+}
+.box img {
+    opacity: .6;
+}
+label {
+    font-size: 13px;
+}

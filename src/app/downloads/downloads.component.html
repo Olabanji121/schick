@@ -1,2 +1,43 @@
-<p>Relax while i fetch your downloads...!</p>
-<app-footer></app-footer>
+<!-- <div *ngFor="let magazine of data" [style.color]="magazine?.mag_id == magazineClicked[0]?.mag_id? 'red': 'black'"> -->
+
+<app-side-nav></app-side-nav>
+<div class="body" *ngIf="magExist">
+    <div class="container animate__animated animate__zoomIn mb-5" *ngIf="!loader" >
+        <div class="flex mb-2" *ngIf="magazineClicked.mag_id !== 0">
+            <button mat-button style="height: 60vh; width: 80%;" (click)="explore(magazineClicked)">
+                <img [src]="magazineClicked?.cover" alt="" style="height: 80%;">
+                <div class="d-flex d-flex2">
+                    <span class="text-info">{{magazineClicked?.issue}}</span> 
+                    <span class="text-dark">{{magazineClicked?.file_size}} Mb</span>   
+                </div>
+                <div>
+                    <button class="pay" mat-button > Read </button>
+                </div>
+            </button>
+        </div>
+
+        <div class="row mt-2 p-3" style="margin-bottom: 90px;">
+            <button mat-button class="col-6 col-md-3" *ngFor="let magazine of data; let i = index" (click)="explore(magazine)">
+                <img [src]="magazine?.cover" alt="">
+                <div class="d-flex d-flex2">
+                    <span class="text-info">{{magazine?.issue}}</span> 
+                    <span class="text-dark">{{magazine?.file_size}} Mb</span>              
+                </div>
+                <div>
+                    <button class="pay" mat-button > Read </button>
+                </div>
+            </button>
+        </div>
+        
+    </div>
+</div>
+
+<div class="spinner text-center" *ngIf="loader">
+    <img src="assets/loader.gif" width="30" height="30" alt="">
+</div>
+
+
+<div class="err" *ngIf="!magExist && !loader">
+    Please download <br />a magazine <br />today!
+</div>
+

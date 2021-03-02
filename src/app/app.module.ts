@@ -14,7 +14,6 @@ import { TopNavComponent } from './admin/top-nav/top-nav.component';
 import { UploadComponent } from './admin/upload/upload.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DownloadsComponent } from './downloads/downloads.component';
-import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NotifyComponent } from './notify/notify.component';
@@ -31,6 +30,16 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
 
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { PayPal, PayPalPayment, PayPalConfiguration } from '@ionic-native/paypal/ngx';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+
+import { PdfViewerModule } from "ng2-pdf-viewer";
+import { PdfViewComponent } from './pdf-view/pdf-view.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { PrintComponent } from './print/print.component';
+import { DigitalsComponent } from './digitals/digitals.component';
+import { ScrapBooksComponent } from './scrap-books/scrap-books.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -40,14 +49,20 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
     UploadComponent,
     DashboardComponent,
     DownloadsComponent,
-    FooterComponent,
     HomeComponent,
     LoginComponent,
     NotifyComponent,
     SignUpComponent,
     ExpansionComponent,
     UserNavComponent,
-    OnboardingComponent
+    OnboardingComponent,
+    NavBarComponent,
+    PdfViewComponent,
+    SideNavComponent,
+    PrintComponent,
+    DigitalsComponent,
+    ScrapBooksComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -59,9 +74,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
     MatButtonModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
+    PdfViewerModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [SplashScreen, StatusBar],
+  providers: [SplashScreen, StatusBar, PayPal],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

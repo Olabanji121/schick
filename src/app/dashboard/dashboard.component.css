@@ -1,26 +1,21 @@
 .head {
     height: 40vh;
     position: relative;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.532);
 }
-.rounded {
-    border: 1px solid black; border-radius: 200px;
-    height: 120px; width: 120px; position: absolute; 
-    top: 34vh; padding: 10px;
-    background-image: linear-gradient(white, black);
-}
-.box:first-child {
-    margin-top: 110px;
-}
+
 .box {
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 25px;
     border-bottom: 1px solid grey;
     font-weight: 500;
     font-size: 22px;
     color: rgb(75, 73, 73);
-    line-height: 40px;
+    line-height: 30px;
 }
 .box img {
     opacity: .6;
+}
+label {
+    font-size: 13px;
 }

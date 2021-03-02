@@ -1,0 +1,25 @@
+<div class="parent">
+    <img src="assets/logo.png" height="30" alt="">
+    
+    <div class="filters dropdown"  >
+        <!-- <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div> -->
+        <div id="dropdownMenuButton" class="d-flex" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="assets/svg/more.svg" height="30" alt="">
+        </div>
+       
+        <div class="dropdown-menu mt-1 animate__animated animate__fadeIn" aria-labelledby="dropdownMenuButton" >
+            <li style="font-size: 13px;" class="d-flex p-2 mt-2" (click)="navigate('home')">
+                <img src="assets/svg/home.jpg" width="30" class="mr-2" alt=""> <span class="home">Home</span>
+            </li>
+            <li style="font-size: 13px;" class="d-flex p-2 mt-4" (click)="navigate('downloads')">
+                <img src="assets/svg/download.png" class="mr-3" alt="" width="20"> Downloads
+            </li>
+            <li style="font-size: 13px;" class="d-flex p-2 mt-4" (click)="navigate('profile')">
+                <img src="assets/svg/user.svg" class="mr-3" alt=""> Profile
+            </li>
+            <li style="font-size: 13px;" class="d-flex p-2 mt-4 mb-2" (click)="logout()">
+                <img src="assets/svg/power.svg" class="mr-3" alt=""> Log Out
+            </li>
+        </div>
+    </div>
+</div>

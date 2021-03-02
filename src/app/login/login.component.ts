@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
         this.server.loginUser(this.user.email).subscribe(data=>{
           if(data.success) {
             this.server.userData = data.message;
+            localStorage.setItem('user', this.user.email)
             this.rout.navigate(['home']);
             console.log(data)
           }

@@ -1,0 +1,32 @@
+<div (click)="openNav()" class="d-flex" style="background-color: rgba(177, 170, 170, 0.19);">
+    <div class="mr-auto">
+        <img src="assets/logo.png" *ngIf="rout!=='/home'" width="100" alt="">
+    </div>
+    <div>
+        <img src="assets/svg/more.svg" alt="" *ngIf="rout!=='/home'">
+        <span *ngIf="rout=='/home'" style="color: white;">&#9776;</span>
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn pt-0" (click)="closeNav()">&times;</a>
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+    <div (click)="extend()" class="nav-item ">Our Issues </div>
+    <div *ngIf="isExtend" class="animate__animated animate__fadeIn">
+        <div class="sub-nav-item mt-2" (click)="navigate('digitals')">Digitals</div>
+        <div class="sub-nav-item mt-3" (click)="navigate('print')">Print</div>
+    </div>
+    <div (click)="extendProfile()" class="nav-item ">My Account </div>
+    <div *ngIf="isProfileExtend" class="animate__animated animate__fadeIn">
+        <div class="sub-nav-item mt-2" (click)="navigate('profile')">Profile</div>
+        <div class="sub-nav-item mt-3" (click)="navigate('scrap')">Scrap Books</div>
+        <div class="sub-nav-item mt-3" (click)="navigate('settings')">Settings</div>
+    </div>
+    <a [routerLink]="['/downloads']">Downloads</a>
+    <a (click)="logout()">Logout</a>
+
+    <div class="social" >
+        <a href=""><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" width="30" alt=""></a>
+        <a href=""><img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Instagram-512.png" width="30" alt=""></a>
+        <a href="" class="mr-3"><img src="https://utilitypeopleuk.com/wp-content/uploads/2017/06/twitter-icon-circle-blue-logo-preview.png" width="30" alt=""></a>
+    </div>
+  </div>

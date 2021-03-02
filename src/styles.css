@@ -1,19 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
 html, body { height: 100%; width: 100%; }
 body { 
   margin: 0; 
-  font-family: Oswald, "Helvetica Neue", sans-serif
+  /* font-family: Oswald, "Helvetica Neue", sans-serif */
+}
+body::after {
+  content: "";
+  background-color: #fefefe;
+  background: url('/assets/spread.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 .spinner {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 45%;
     transform: translate(-50%, -50%);
+  }
+  .spinner img {
+    max-height: 30px; max-width: 30px;
   }
 
   input{
-    background: transparent; outline: none !important; border: 0px;
+    background: transparent; outline: none !important; border: 0px; padding-bottom: 3px;
+  }
+  input:focus {
+    outline: none;
   }
   
   *::-webkit-scrollbar-thumb {

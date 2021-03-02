@@ -6,16 +6,19 @@
     <div class="text1">Create new account</div>
     <form (submit)="handleSubmit()">
         <div class="form-group">
-            <input type="text" class="form-control" name="name" [(ngModel)]="user.name" placeholder="Name">
+            <input type="text" class="col-12" name="name" [(ngModel)]="user.name" placeholder="Name">
         </div>
         <div class="form-group">
-            <input type="email" class="form-control" name="email" [(ngModel)]="user.email" placeholder="Email">
+            <input type="email" class="col-12" name="email" [(ngModel)]="user.email" placeholder="Email">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" name="password" [(ngModel)]="user.password" placeholder="Password">
+            <input type="password" class="col-12" name="password" [(ngModel)]="user.password" placeholder="Password">
+            • Upper and lowercase  <br />
+            • 8 or more characters   <br />
+            • Contains a number and symbol  <br />
         </div>
         <div class="form-group">
-            <input type="number" class="form-control" name="mobile" [(ngModel)]="user.mobile" placeholder="Phone Number">
+            <input type="number" class="col-12" name="mobile" [(ngModel)]="user.mobile" placeholder="Phone Number">
         </div>
 
         <button type="submit" mat-button *ngIf="!loading">Signup</button>

@@ -24,12 +24,15 @@ form {
 }
 input {
     border: 0px;
-    border-bottom: 1px solid grey;
-    outline: none;
+    border-bottom: .5px solid grey;
+    outline: none  !important;
 }
 .form-group {
     margin-top: 60px;
 }
+input:focus {
+    outline: none !important;
+  }
 button {
     margin-top: 100px;
     background-color: #373435;

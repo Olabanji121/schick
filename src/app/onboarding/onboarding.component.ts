@@ -16,7 +16,7 @@ export class OnboardingComponent implements OnInit {
   }
   
   getStarted() {
-    this.rout.navigate(['sign-up'])
+    this.rout.navigate(['home'])
   }
 
   slide(x) {

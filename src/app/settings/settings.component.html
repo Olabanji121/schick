@@ -1,0 +1,18 @@
+<app-side-nav></app-side-nav>
+<div style="z-index: -1;">
+    <div class="head text-center animate__animated animate__fadeIn" style="padding-top: 10vh;">
+        <img src="assets/logo2.png" height="70" alt="">
+    </div>
+    <div class="text-center text-danger mt-3" style="font-size: 14px;">{{err}}</div>
+    <form (submit)="handleSubmit()" style="padding: 10px; margin-top: 40px;"> 
+        <div class="box">
+            <label for="Name">Email</label><br />
+            <input type="email" style="width: 100%;" name="email" [(ngModel)]="email"  id="">
+        </div>
+
+        <button mat-buttton *ngIf="!loading">Reset Passsword</button>
+        <button mat-buttton disabled *ngIf="loading">Please wait...</button>
+    </form>
+    
+</div>
+

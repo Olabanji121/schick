@@ -5,10 +5,10 @@
     <div class="text1">Sign In</div>
     <form (submit)="handleSubmit()">
         <div class="form-group">
-            <input type="email" class="form-control" name="email" [(ngModel)]="user.email" placeholder="Email">
+            <input type="email" class="col-12" name="email" [(ngModel)]="user.email" placeholder="Email">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" name="password" [(ngModel)]="user.password" placeholder="Password">
+            <input type="password" class="col-12" name="password" [(ngModel)]="user.password" placeholder="Password">
         </div>
         
         <button type="submit" mat-button *ngIf="!loading">Sign In</button>
